@@ -5,7 +5,10 @@
 #This process repeats until all values have been compared and the largest value has 'bubbled up' to the end of the list.
 
 def bubbleSort(list):
+    #Outer for loop iterates through the list to ensure every value is compared
     for n in range(len(list)-1, 0, -1):
+        #inner for loop iterates through individual values to compare them against the next sequential value
+        #to determine which is greater
         for i in range(n):
             if list[i] > list[i+1]: #Compares ith value with the one in i+1 position
             #If ith value is larger, values are swapped via simultaneous assignment            

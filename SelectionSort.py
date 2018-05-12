@@ -5,10 +5,11 @@
 #This process is repeated until it has examined all elements in the list
 
 def selectionSort(list):
-    
+    #outer for loop iterates through each value in the list
     for n in range(len(list)-1, 0, -1):
         #defining the variable which will store the value for the max number position
         maxNumPosition = 0
+        #inner for loop compares ith value with maxNumPosition value to determine which is larger
         for i in range(1, n+1):
             #if condition checks whether the value in ith position is larger than the value in the current maxNumPosition
             if list[i] > list[maxNumPosition]:

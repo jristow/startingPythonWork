@@ -5,7 +5,7 @@
 
 
 def insertionSort(list):
-    
+    #For loop iterates through the whole list
     for i in range(1, len(list)):
         #Storing the ith value as the current value
         currentValue = list[i]
